@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/aparser-async/__init__.py
+src/aparser-async/aparser.py
+src/aparser-async/exceptions.py
+src/aparser-async/schemas.py
+src/aparser_async.egg-info/PKG-INFO
+src/aparser_async.egg-info/SOURCES.txt
+src/aparser_async.egg-info/dependency_links.txt
+src/aparser_async.egg-info/requires.txt
+src/aparser_async.egg-info/top_level.txt

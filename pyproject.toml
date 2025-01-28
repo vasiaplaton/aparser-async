@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "aparser-async"
+version = "0.0.1"
+authors = [
+  { name="Vasilii Platon", email="vasia.platon@gmail.com" },
+]
+description = "Command-line tool for recursively traversing directories to print file paths and their contents. "
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "httpx>=0.20.0,<1.0.0"
+]
+[project.urls]
+Homepage = "https://github.com/vasiaplaton/aparser-async"
+Issues = "https://github.com/vasiaplaton/aparser-async/issues"
