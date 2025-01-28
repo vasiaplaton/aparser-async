@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: aparser-async
-Version: 0.0.1
+Version: 0.0.2
 Summary: Command-line tool for recursively traversing directories to print file paths and their contents. 
 Author-email: Vasilii Platon <vasia.platon@gmail.com>
 Project-URL: Homepage, https://github.com/vasiaplaton/aparser-async

@@ -1,9 +1,9 @@
 README.md
 pyproject.toml
-src/aparser-async/__init__.py
-src/aparser-async/aparser.py
-src/aparser-async/exceptions.py
-src/aparser-async/schemas.py
+src/aparser_async/__init__.py
+src/aparser_async/aparser.py
+src/aparser_async/exceptions.py
+src/aparser_async/schemas.py
 src/aparser_async.egg-info/PKG-INFO
 src/aparser_async.egg-info/SOURCES.txt
 src/aparser_async.egg-info/dependency_links.txt

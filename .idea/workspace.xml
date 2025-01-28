@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43b5c66a-2210-4f41-bb94-795102568cff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AsyncAparser.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aparser-async-api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aparser-async-api/aparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aparser-async-api/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aparser-async-api/schemas.py" afterDir="false" />
-    </list>
+    <list default="true" id="43b5c66a-2210-4f41-bb94-795102568cff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
