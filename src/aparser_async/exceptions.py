@@ -1,4 +1,4 @@
-__all__ = ('AParserError', 'AParserReqError', 'AParserRequestNotSuccess')
+__all__ = ('AParserError', 'AParserReqError', 'AParserRequestNotSuccess', 'AParserTimeoutError')
 
 
 class AParserError(Exception):
@@ -11,3 +11,7 @@ class AParserReqError(AParserError):
 
 class AParserRequestNotSuccess(AParserError):
     """Request not success, aparaser returned success != 1"""
+
+
+class AParserTimeoutError(AParserError):
+    """Timeout error"""

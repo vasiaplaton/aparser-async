@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: aparser-async
-Version: 0.0.2
+Version: 0.0.3
 Summary: Command-line tool for recursively traversing directories to print file paths and their contents. 
 Author-email: Vasilii Platon <vasia.platon@gmail.com>
 Project-URL: Homepage, https://github.com/vasiaplaton/aparser-async
@@ -11,6 +11,7 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 Requires-Dist: httpx<1.0.0,>=0.20.0
+Requires-Dist: pydantic<3.0.0,>=2.5.3
 
 # A-Parser Async Python Library
 

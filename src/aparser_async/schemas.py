@@ -10,6 +10,13 @@ __all__ = ('PingRequest', 'BaseRequest', 'OverrideOptions', 'OverrideOptionsAddi
            'ProxyCheckerState', 'ChangeProxyCheckerState')
 
 
+class TaskChangeStatus(str, enum.Enum):
+    STARTING = "starting"  # Launching a task
+    PAUSING = "pausing"  # Putting the task on pause
+    STOPPING = "stopping"  # Stopping the task
+    DELETING = "deleting"  # Deleting the task
+
+
 class BaseRequest(BaseModel):
     password: str
     action: Literal["ping", "oneRequest", "bulkRequest", "addTask", "getTaskState", "getTaskResultsFile",
@@ -85,9 +92,18 @@ class TaskUidData(BaseModel):
     taskUid: int
 
 
+class ToStatus(TaskUidData):
+    toStatus: TaskChangeStatus
+
+
 class GetTaskState(BaseRequest):
     action: str = "getTaskState"
     data: TaskUidData
+
+
+class ChangeTaskStatus(BaseRequest):
+    action: str = "changeTaskStatus"
+    data: ToStatus
 
 
 class GetTaskResultFile(BaseRequest):
@@ -132,13 +148,6 @@ class TaskStatus(BaseModel):
     status: str
     stats: Any
     state: StatusState
-
-
-class TaskChangeStatus(str, enum.Enum):
-    STARTING = "starting"  # Launching a task
-    PAUSING = "pausing"  # Putting the task on pause
-    STOPPING = "stopping"  # Stopping the task
-    DELETING = "deleting"  # Deleting the task
 
 
 class ProxyCheckerState(BaseModel):

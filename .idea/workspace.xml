@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43b5c66a-2210-4f41-bb94-795102568cff" name="Changes" comment="" />
+    <list default="true" id="43b5c66a-2210-4f41-bb94-795102568cff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/aparser_async-0.0.3-py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/aparser_async-0.0.3.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aparser_async.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/src/aparser_async.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aparser_async.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aparser_async.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aparser_async/aparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/aparser_async/aparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aparser_async/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/aparser_async/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aparser_async/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/aparser_async/schemas.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +23,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vasiaplaton"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:vasiaplaton/aparser-async.git",
+    "accountId": "a0d87866-33d5-4407-be42-f42702366ece"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2sGKXn9RjjvqKmP59Oia3MdOnaU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,6 +51,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/vasiaplaton/adcgames/AsyncAparser"
   }
 }]]></component>
@@ -41,7 +65,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
       </set>
     </attachedChunks>
   </component>

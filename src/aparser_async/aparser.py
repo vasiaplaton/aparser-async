@@ -6,7 +6,7 @@ from typing import Literal
 import httpx
 
 from . import schemas
-from .exceptions import AParserReqError, AParserRequestNotSuccess
+from .exceptions import AParserReqError, AParserRequestNotSuccess, AParserTimeoutError, AParserError
 from .schemas import TaskChangeStatus
 
 __all__ = ("AParser",)
@@ -84,14 +84,11 @@ class AParser:
         return status
 
     async def change_task_state(self, task_id: int, state: TaskChangeStatus) -> None:
-        data = {
-            "password": self.password,
-            "action": "changeTaskStatus",
-            "data": {
-                "taskUid": task_id,
-                "toStatus": state.value
-            }
-        }
+        data = schemas.ChangeTaskStatus(
+            password=self.password,
+            data=schemas.ToStatus(taskUid=task_id, toStatus=state)
+        ).model_dump_json()
+
         await self.send(data)
 
     async def try_to_delete_task(self, task_id: int) -> None:
@@ -118,11 +115,11 @@ class AParser:
             if task_status.status not in ["work", "starting", "waitSlot"]:
                 logger.warning(f"Task {task_id} finished with status {task_status.status}, trying to delete...")
                 await self.try_to_delete_task(task_id)
-                raise AParserError("Task finished with error")
+                raise AParserRequestNotSuccess("Task finished with error")
             if timeout is not None and time_passed > timeout:
                 logger.warning(f"Timeout exceeded for task {task_id}, trying to delete...")
                 await self.try_to_delete_task(task_id)
-                raise AParserError("Timeout exceeded")
+                raise AParserTimeoutError("Timeout exceeded")
 
             await asyncio.sleep(delay)
 
@@ -172,9 +169,9 @@ class AParser:
             try:
                 result = await client.get(url, timeout=10)
             except httpx.HTTPError as e:
-                raise AParserError(e) from e
+                raise AParserReqError(e) from e
         if result.status_code not in [200, 201]:
-            raise AParserError(f"Got error status code from A-Parser, {result.status_code}")
+            raise AParserReqError(f"Got error status code from A-Parser, {result.status_code}")
 
         return result.text
 
